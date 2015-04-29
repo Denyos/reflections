@@ -24,6 +24,8 @@ What are some situations when branches would be helpful in keeping your history 
 How would branches help?
     Split concerns. Safe to make big changes and test new things out.
 
+How do the diagrams help you visualize the branch structure?
+     By drawing the diagram you can directly see the relations between commits and branches. This makes it clear where to find specific changes.
 
 Commands:
 
@@ -34,3 +36,5 @@ git diff  |    Git diff without arguments is comparing the working directory wit
 git diff --staged  |    Compare the staging area with the repository
 git reset --hard  |    Undo all changes! There is no rollback for this, so be carefull!
 git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
+git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
