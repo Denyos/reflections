@@ -12,6 +12,18 @@ What value do you think it offers?
     The option to create your set of files which you want to commit without having to add all new files. This way
     you have the option to make a split based on logical functionality
 
+How can you use the staging area to make sure you have one commit per logical change?
+    The staging area gives you the possibility to decide which files should be part of the commit and which not.
+    This way you can split changed files in logical change sets.
+
+What are some situations when branches would be helpful in keeping your history organized? 
+    Work on conflicting changes, trying out new features, large code refactoring etc.
+    This gives the possibility to change everything with multiple commits into the "feature branch" and then do a large merge to the "main branch".
+    This will keep the history clean, but you can still use version control during development.
+
+How would branches help?
+    Split concerns. Safe to make big changes and test new things out.
+
 
 Commands:
 
