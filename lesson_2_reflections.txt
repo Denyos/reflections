@@ -17,4 +17,4 @@ Commands:
 
 git add  |    Add a file to the staging area
 git commit  |    Commit the files from the staging area to the repository 
-git status  |    Show which files are in the staging area, and which files are not part of the repository    
+git status  |    Show which files are in the staging area, and which files from the working directory are not part of the repository    
