@@ -1,0 +1,20 @@
+What happens when you initialize a repository? 
+    A new git repository is created. A hidden folder named .git is added which contains the required files for version history.
+
+Why do you need to do it?
+    Without a repository, git cannot do anything. Git works only on git repositories.
+
+How is the staging area different from the working directory and the repository? 
+    The staging area is a monitored area by git. It is not required to contain all files from the working directory. 
+    The files are not yet in the repository so you can still add/remove files from the staging area before making a commit.
+
+What value do you think it offers?
+    The option to create your set of files which you want to commit without having to add all new files. This way
+    you have the option to make a split based on logical functionality
+
+
+Commands:
+
+git add  |    Add a file to the staging area
+git commit  |    Commit the files from the staging area to the repository 
+git status  |    Show which files are in the staging area, and which files are not part of the repository    
