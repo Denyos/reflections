@@ -27,6 +27,12 @@ How would branches help?
 How do the diagrams help you visualize the branch structure?
      By drawing the diagram you can directly see the relations between commits and branches. This makes it clear where to find specific changes.
 
+What is the result of merging two branches together? 
+    The result is one branch with changes from both branches.
+
+Why do we represent it in the diagram the way we do?
+    After a merge, all commits will be shown based on the timestamp in git log. This will show the commits from the two different branches running through each other.
+
 Commands:
 
 git add  |    Add a file to the staging area
@@ -38,3 +44,6 @@ git reset --hard  |    Undo all changes! There is no rollback for this, so be ca
 git checkout master  |    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
 git log --graph --oneline <branch1> <branch2>  |    Show a visual representation of the commit history within different branches
 git checkout -b new_branch_name  |    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  |    Merge two branches, branch2 get merged into branch1
+git branch -d name  |    Remove the branch with the specified name
+git show commitId  |    Show the changes made in this commit compared to the previous version. This is working even after merging.
