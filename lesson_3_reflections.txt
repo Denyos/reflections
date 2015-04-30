@@ -1,5 +1,9 @@
 When would you want to create a remote repository rather than keeping all your work local?
     When collaborating with other users it's easier to share updates by using a remote repository. This way others can contribute, and get changes too.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+    Changes can cause conflicts. If you are in the process of creating a new feature, you don't want to solve those conflicts but finish your feature first.
+    This way you can keep focus and decide when you want to get the latest versions and integrate changes.
     
 Commands:
 
@@ -7,3 +11,4 @@ git remote  |    Show all remote locations for the repository
 git remote add origin url |     Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
 git remove -v  |    Outputs the remote locations with verbose information (fetch and push urls)
 git push origin master  |    Push the master branch to the remote location origin.
+git pull origin master  |    Get the master branch from the remote location origin.
