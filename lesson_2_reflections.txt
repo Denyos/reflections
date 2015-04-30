@@ -33,6 +33,9 @@ What is the result of merging two branches together?
 Why do we represent it in the diagram the way we do?
     After a merge, all commits will be shown based on the timestamp in git log. This will show the commits from the two different branches running through each other.
 
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+    Automatic merging saves a lot of time compared to doing merges manually. 
+
 Commands:
 
 git add  |    Add a file to the staging area
